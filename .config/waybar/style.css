@@ -213,7 +213,7 @@
 #custom-arrow2 {
 	font-size: 11pt;
 	color: @date;
-	background: @layout;
+	background: @battery;
 }
 
 #custom-arrow3 {

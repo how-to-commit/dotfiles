@@ -63,7 +63,7 @@
 	background: rgba(40, 40, 40, 0.8784313725); /* #282828e0 */
 	color: @white;
 	font-family: CaskaydiaCove Nerd Font;
-	font-size: 15pt;
+	font-size: 16pt;
 	/*font-weight: bold;*/
 }
 
@@ -73,7 +73,6 @@
 #cpu,
 #language,
 #memory,
-#mode,
 #network,
 #pulseaudio,
 #temperature,
@@ -88,7 +87,6 @@
 }
 
 /* Each critical module */
-#mode,
 #memory.critical,
 #cpu.critical,
 #temperature.critical,
@@ -110,12 +108,6 @@
 }
 
 /* And now modules themselves in their respective order */
-
-/* Current sway mode (resize etc) */
-#mode {
-	color: @white;
-	background: @mode;
-}
 
 /* Workspaces stuff */
 #workspaces button {
@@ -155,7 +147,7 @@
 	margin-left: 35pt;
 }
 
-#pulseaudio {
+#pulseaudio, #backlight {
 	background: @sound;
 	color: @black;
 }
@@ -205,61 +197,61 @@
 }
 
 #custom-arrow1 {
-	font-size: 11pt;
+	font-size: 16pt;
 	color: @time;
 	background: @date;
 }
 
 #custom-arrow2 {
-	font-size: 11pt;
+	font-size: 16pt;
 	color: @date;
 	background: @battery;
 }
 
 #custom-arrow3 {
-	font-size: 11pt;
-	color: @layout;
-	background: @battery;
+	font-size: 16pt;
+	color: @sound;
+	background: @layout;
 }
 
 #custom-arrow4 {
-	font-size: 11pt;
+	font-size: 16pt;
 	color: @battery;
 	background: @temp;
 }
 
 #custom-arrow5 {
-	font-size: 11pt;
+	font-size: 16pt;
 	color: @temp;
 	background: @cpu;
 }
 
 #custom-arrow6 {
-	font-size: 11pt;
+	font-size: 16pt;
 	color: @cpu;
 	background: @memory;
 }
 
 #custom-arrow7 {
-	font-size: 11pt;
+	font-size: 16pt;
 	color: @memory;
 	background: @network;
 }
 
 #custom-arrow8 {
-	font-size: 11pt;
+	font-size: 16pt;
 	color: @network;
 	background: @sound;
 }
 
 #custom-arrow9 {
-	font-size: 11pt;
+	font-size: 16pt;
 	color: @sound;
 	background: transparent;
 }
 
 #custom-arrow10 {
-	font-size: 11pt;
+	font-size: 16pt;
 	color: @unfocused;
 	background: transparent;
 }

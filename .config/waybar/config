@@ -3,7 +3,6 @@
 	"position": "top",
 
 	"modules-left": [
-		"hyprland/mode",
 		"hyprland/workspaces",
 		"custom/arrow10",
 		"hyprland/window"
@@ -11,6 +10,7 @@
 
 	"modules-right": [
 		"custom/arrow9",
+        "backlight",
 		"pulseaudio",
 		"custom/arrow8",
 		"network",
@@ -96,11 +96,6 @@
 		"tooltip": false
 	},
 
-	"hyprland/mode": {
-		"format": "{}",
-		"tooltip": false
-	},
-
 	"hyprland/window": {
 		"format": "{}",
 		"max-length": 30,
@@ -133,6 +128,12 @@
 		"on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
 		"tooltip": false
 	},
+
+    "backlight": {
+        "format": "{icon} {percent}%",
+        "format-icons": ["", ""],
+		"tooltip": false
+    },
 
 	"temperature": {
 		"critical-threshold": 90,

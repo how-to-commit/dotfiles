@@ -11,9 +11,3 @@ enable_audio_bell no
 
 dynamic_background_opacity yes
 background_opacity 0.8
-
-
-# BEGIN_KITTY_THEME
-# Gruvbox Dark
-include current-theme.conf
-# END_KITTY_THEME

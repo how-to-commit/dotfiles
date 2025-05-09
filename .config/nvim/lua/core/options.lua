@@ -22,3 +22,4 @@ vim.opt.undofile = true
 vim.opt.termguicolors = true
 vim.g.have_nerd_font = true
 vim.opt.clipboard:append("unnamedplus")
+vim.opt.signcolumn = "yes:2"

@@ -25,7 +25,5 @@ return {
     config = function()
         pcall(require('telescope').load_extension, 'fzf')
         pcall(require('telescope').load_extension, 'ui-select')
-
-        vim.keymap.set("n", "<leader>ff", require("telescope.builtin").find_files)
     end
 }

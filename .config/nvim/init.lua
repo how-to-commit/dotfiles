@@ -1,7 +1,3 @@
-require("core.options")
-require("core.keymaps")
-require("core.autocmds")
-
 -- Set up the Lazy plugin manager
 local lazypath = vim.fn.stdpath 'data' .. '/lazy/lazy.nvim'
 if not (vim.uv or vim.loop).fs_stat(lazypath) then
@@ -13,6 +9,7 @@ if not (vim.uv or vim.loop).fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(lazypath)
 
+-- setup plugins
 require("lazy").setup {
     require("plugins.neotree"),
     require("plugins.theme"),
@@ -21,4 +18,10 @@ require("lazy").setup {
     require("plugins.bufferline"),
     require("plugins.treesitter"),
     require("plugins.telescope"),
+    require("plugins.null-ls"),
 }
+
+-- setup core options to overwrite
+require("core.options")
+require("core.keymaps")
+require("core.autocmds")

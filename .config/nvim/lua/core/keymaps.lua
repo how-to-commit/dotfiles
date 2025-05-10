@@ -15,10 +15,19 @@ vim.keymap.set("n", "gr", vim.lsp.buf.references)
 vim.keymap.set("n", "<leader>lf", vim.lsp.buf.format)
 vim.keymap.set("n", "<leader>lr", vim.lsp.buf.rename)
 vim.keymap.set("n", "<leader>la", vim.lsp.buf.code_action)
+vim.keymap.set("n", "<leader>ld", vim.diagnostic.open_float)
+
+-- buffers
+vim.keymap.set("n", "<Tab>", ":bnext<CR>")
+vim.keymap.set("n", "<S-Tab>", ":bprevious<CR>")
+vim.keymap.set("n", "<leader>bc", ":bdelete!<CR>") -- close buffer
+vim.keymap.set("n", "<leader>bn", ":enew <CR>")    -- new buffer
+vim.keymap.set("n", "<leader>ff", require("telescope.builtin").find_files)
+vim.keymap.set("n", "<leader><leader>", require("telescope.builtin").buffers)
 
 -- impt misc
-vim.keymap.set("n", "<leader>q", ":q")
-vim.keymap.set("n", "<leader>w", ":w")
+vim.keymap.set("n", "<leader>q", ":q<CR>")
+vim.keymap.set("n", "<leader>w", ":w<CR>")
 
 -- centre on find
 vim.keymap.set("n", "n", "nzzzv")
@@ -30,12 +39,6 @@ vim.keymap.set("n", "<Down>", ":resize +2<CR>")
 vim.keymap.set("n", "<Left>", ":vertical resize -2<CR>")
 vim.keymap.set("n", "<Right>", ":vertical resize +2<CR>")
 
--- buffers
-vim.keymap.set("n", "<Tab>", ":bnext<CR>")
-vim.keymap.set("n", "<S-Tab>", ":bprevious<CR>")
-vim.keymap.set("n", "<leader>bc", ":bdelete!<CR>")   -- close buffer
-vim.keymap.set("n", "<leader>bn", "<cmd> enew <CR>") -- new buffer
-
 -- move between splits
 vim.keymap.set("n", "<C-k>", ":wincmd k<CR>")
 vim.keymap.set("n", "<C-j>", ":wincmd j<CR>")
@@ -45,3 +48,6 @@ vim.keymap.set("n", "<C-l>", ":wincmd l<CR>")
 -- stay in indent mode
 vim.keymap.set("v", ">", ">gv")
 vim.keymap.set("v", "<", "<gv")
+
+-- neotree
+vim.keymap.set('n', '<leader>e', ':Neotree toggle position=left<CR>', { noremap = true }) -- i have no idea why it has to be here but it does

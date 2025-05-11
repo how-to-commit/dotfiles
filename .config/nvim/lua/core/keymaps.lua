@@ -22,12 +22,16 @@ vim.keymap.set("n", "<Tab>", ":bnext<CR>")
 vim.keymap.set("n", "<S-Tab>", ":bprevious<CR>")
 vim.keymap.set("n", "<leader>bc", ":bdelete!<CR>") -- close buffer
 vim.keymap.set("n", "<leader>bn", ":enew <CR>")    -- new buffer
-vim.keymap.set("n", "<leader>ff", require("telescope.builtin").find_files)
+
+-- telescope
 vim.keymap.set("n", "<leader><leader>", require("telescope.builtin").buffers)
+vim.keymap.set("n", "<leader>ff", require("telescope.builtin").find_files)
+vim.keymap.set("n", "<leader>fg", require("telescope.builtin").live_grep)
 
 -- impt misc
 vim.keymap.set("n", "<leader>q", ":q<CR>")
 vim.keymap.set("n", "<leader>w", ":w<CR>")
+vim.keymap.set("n", "<leader>uh", ":nohl<CR>")
 
 -- centre on find
 vim.keymap.set("n", "n", "nzzzv")

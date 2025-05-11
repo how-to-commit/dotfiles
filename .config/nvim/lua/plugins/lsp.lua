@@ -53,5 +53,8 @@ return {
             config.capabilities = require("blink.cmp").get_lsp_capabilities(config.capabilities)
             lspconfig[server].setup(config)
         end
+
+        -- enable virtual text!
+        vim.diagnostic.config({ virtual_text = true })
     end
 }

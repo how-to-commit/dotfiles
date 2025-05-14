@@ -53,5 +53,7 @@ vim.keymap.set("n", "<C-l>", ":wincmd l<CR>")
 vim.keymap.set("v", ">", ">gv")
 vim.keymap.set("v", "<", "<gv")
 
--- neotree
-vim.keymap.set('n', '<leader>e', ':Neotree toggle position=left<CR>', { noremap = true }) -- i have no idea why it has to be here but it does
+-- misc plugins
+vim.keymap.set('n', '<leader>e', ':Neotree toggle position=left<CR>', { noremap = true })
+vim.keymap.set("n", "<leader>g", ":lua _Lazygit_toggle()<CR>", { noremap = true })
+vim.keymap.set("n", "<C-/>", ":ToggleTerm<CR>", { noremap = true })

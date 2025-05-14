@@ -19,6 +19,8 @@ require("lazy").setup {
     require("plugins.treesitter"),
     require("plugins.telescope"),
     require("plugins.null-ls"),
+    require("plugins.toggleterm"),
+    require("plugins.misc"),
 }
 
 -- setup core options to overwrite

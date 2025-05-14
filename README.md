@@ -1,5 +1,3 @@
 ## TODO:  
-- [ ] fix power.sh  
+- [ ] fix power.sh (add hyprlock?)  
 - [ ] rewrite waybar?  
-- [x] add LSP to neovim  
-- [ ] add bufferline, align, bracketpairs to neovim  

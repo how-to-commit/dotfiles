@@ -31,7 +31,9 @@ vim.keymap.set("n", "<leader>fg", require("telescope.builtin").live_grep)
 -- impt misc
 vim.keymap.set("n", "<leader>q", ":q<CR>")
 vim.keymap.set("n", "<leader>w", ":w<CR>")
-vim.keymap.set("n", "<leader>uh", ":nohl<CR>")
+vim.keymap.set("n", "<leader>ul", ":nohl<CR>")
+vim.keymap.set("n", "<leader>uv", ":vsp<CR>")
+vim.keymap.set("n", "<leader>uh", ":sp<CR>")
 
 -- centre on find
 vim.keymap.set("n", "n", "nzzzv")

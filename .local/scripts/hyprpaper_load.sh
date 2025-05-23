@@ -11,6 +11,12 @@ fi
 
 # get a new one on boot
 WALLPAPER_DIR="$HOME/Pictures/Wallpapers/"
-CURRENT_WALLPAPER=$(hyprctl hyprpaper listloaded)
 NEW=$(find "$WALLPAPER_DIR" -type f | shuf -n 1)
-hyprctl hyprpaper reload ,"$NEW"
+CMD="hyprctl hyprpaper reload ,'$NEW'"
+
+while ! eval "$CMD"; do
+    echo hyprpaper not running yet... wait 1s
+    sleep 1
+done
+
+echo Done, loaded $NEW

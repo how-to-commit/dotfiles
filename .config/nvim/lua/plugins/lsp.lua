@@ -31,6 +31,7 @@ return {
             rust_analyzer = {},
             ruff = {},
             pylsp = {},
+            pyright = {},
         }
     },
 

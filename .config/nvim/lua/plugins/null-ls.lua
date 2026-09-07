@@ -10,7 +10,6 @@ return {
         -- use mason-null-ls as our "list provider"
         require("mason-null-ls").setup {
             ensure_installed = {
-                "prettier",  -- js formatter
                 "eslint_d",  -- js linter
                 "stylua",    -- lua formatter
                 "checkmake", -- makefile linter

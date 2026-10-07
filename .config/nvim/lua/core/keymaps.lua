@@ -21,7 +21,7 @@ vim.keymap.set("n", "<leader>ld", vim.diagnostic.open_float)
 vim.keymap.set("n", "<Tab>", ":bnext<CR>")
 vim.keymap.set("n", "<S-Tab>", ":bprevious<CR>")
 vim.keymap.set("n", "<leader>bc", ":bdelete!<CR>") -- close buffer
-vim.keymap.set("n", "<leader>bn", ":enew <CR>")    -- new buffer
+vim.keymap.set("n", "<leader>bn", ":enew <CR>") -- new buffer
 
 -- telescope
 vim.keymap.set("n", "<leader><leader>", require("telescope.builtin").buffers)
@@ -56,6 +56,6 @@ vim.keymap.set("v", ">", ">gv")
 vim.keymap.set("v", "<", "<gv")
 
 -- misc plugins
-vim.keymap.set('n', '<leader>e', ':Neotree toggle position=left<CR>', { noremap = true })
+vim.keymap.set("n", "<leader>e", ":Neotree toggle position=left<CR>", { noremap = true })
 vim.keymap.set("n", "<leader>g", ":lua _Lazygit_toggle()<CR>", { noremap = true })
 vim.keymap.set("n", "<C-/>", ":ToggleTerm<CR>", { noremap = true })

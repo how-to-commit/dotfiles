@@ -20,6 +20,7 @@ hl.bind(mainMod .. "+ E", hl.dsp.exec_cmd(fileManager))
 hl.bind(mainMod .. "+ SPACE", hl.dsp.exec_cmd(menu))
 hl.bind(mainMod .. "+ SHIFT + P", hl.dsp.exec_cmd(fullscreenScreenshot))
 hl.bind(mainMod .. "+ P", hl.dsp.exec_cmd(screenshot))
+hl.bind("CTRL + ALT + DELETE", hl.dsp.exec_cmd(logoutmenu))
 
 -- Move focus with vim keys
 hl.bind(mainMod .. " + H", hl.dsp.focus({ direction = "left" }))
